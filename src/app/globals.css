@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @apply bg-surface text-ink-primary antialiased;
+}
+
+::selection {
+  @apply bg-sky-500/30;
+}
+
+.card {
+  @apply rounded-xl border border-surface-border bg-surface-raised p-5 shadow-sm;
+}
+
+.label {
+  @apply text-xs font-medium uppercase tracking-wide text-ink-muted;
+}
